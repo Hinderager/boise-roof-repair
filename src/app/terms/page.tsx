@@ -2,10 +2,10 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | Boise HVAC Pros',
-  description: 'Terms of service for Boise HVAC Pros heating and cooling services in Boise and the Treasure Valley.',
+  title: 'Terms of Service | Boise Roofing Pros',
+  description: 'Terms of service for Boise Roofing Pros roofing services in Boise and the Treasure Valley.',
   alternates: {
-    canonical: 'https://hvac-boise.com/terms',
+    canonical: 'https://boise-roof-repair.com/terms',
   },
 }
 
@@ -19,22 +19,22 @@ export default function TermsPage() {
 
           <div className="prose prose-lg max-w-none text-gray-600">
             <p>
-              Welcome to Boise HVAC Pros. By accessing our website or using our services, you agree to be bound by these Terms of Service. Please read them carefully.
+              Welcome to Boise Roofing Pros. By accessing our website or using our services, you agree to be bound by these Terms of Service. Please read them carefully.
             </p>
 
             <h2 className="text-2xl font-bold text-gunmetal mt-8 mb-4">1. Services</h2>
             <p>
-              Boise HVAC Pros provides professional heating, ventilation, and air conditioning services including repair, installation, and maintenance in Boise, Meridian, Nampa, Caldwell, Eagle, and surrounding areas in Idaho. All services are subject to availability and our ability to safely perform the work.
+              Boise Roofing Pros provides professional heating, ventilation, and roof leak repair services including repair, installation, and maintenance in Boise, Meridian, Nampa, Caldwell, Eagle, and surrounding areas in Idaho. All services are subject to availability and our ability to safely perform the work.
             </p>
 
             <h2 className="text-2xl font-bold text-gunmetal mt-8 mb-4">2. Service Agreement</h2>
             <p>
-              By requesting services from Boise HVAC Pros, you represent that you are the property owner or have authorization from the property owner to request and authorize HVAC services. You agree to provide accurate information about the property and scope of work needed.
+              By requesting services from Boise Roofing Pros, you represent that you are the property owner or have authorization from the property owner to request and authorize Roofing services. You agree to provide accurate information about the property and scope of work needed.
             </p>
 
             <h2 className="text-2xl font-bold text-gunmetal mt-8 mb-4">3. Estimates and Pricing</h2>
             <ul>
-              <li>We provide free estimates based on an on-site assessment of your HVAC system</li>
+              <li>We provide free estimates based on an on-site assessment of your Roofing system</li>
               <li>Diagnostic fees may apply for repair services and are disclosed before the visit</li>
               <li>Estimates are valid for 30 days unless otherwise specified</li>
               <li>Final pricing may vary if the actual scope of work differs significantly from the initial assessment</li>
@@ -64,10 +64,10 @@ export default function TermsPage() {
             <h2 className="text-2xl font-bold text-gunmetal mt-8 mb-4">6. Property Access and Safety</h2>
             <p>You agree to:</p>
             <ul>
-              <li>Provide safe access to the property and HVAC equipment for our team</li>
+              <li>Provide safe access to the property and Roofing equipment for our team</li>
               <li>Inform us of any known hazards or concerns about the property</li>
               <li>Secure pets during service appointments</li>
-              <li>Ensure clear access to indoor and outdoor HVAC equipment</li>
+              <li>Ensure clear access to indoor and outdoor Roofing equipment</li>
               <li>Have electrical service connected and functioning at the property</li>
             </ul>
 
@@ -82,7 +82,7 @@ export default function TermsPage() {
 
             <h2 className="text-2xl font-bold text-gunmetal mt-8 mb-4">8. Liability and Insurance</h2>
             <ul>
-              <li>Boise HVAC Pros is fully licensed and insured</li>
+              <li>Boise Roofing Pros is fully licensed and insured</li>
               <li>We carry general liability insurance and workers&apos; compensation coverage</li>
               <li>We take reasonable care to protect your property during service</li>
               <li>We are not responsible for pre-existing damage or concealed conditions</li>
@@ -91,7 +91,7 @@ export default function TermsPage() {
 
             <h2 className="text-2xl font-bold text-gunmetal mt-8 mb-4">9. Permits and Code Compliance</h2>
             <p>
-              When required by local building codes, we obtain necessary permits for HVAC installations and major repairs. Permit fees are included in our quotes unless otherwise noted. All work is performed in compliance with applicable building codes and manufacturer specifications.
+              When required by local building codes, we obtain necessary permits for Roofing installations and major repairs. Permit fees are included in our quotes unless otherwise noted. All work is performed in compliance with applicable building codes and manufacturer specifications.
             </p>
 
             <h2 className="text-2xl font-bold text-gunmetal mt-8 mb-4">10. Communication Consent</h2>
@@ -106,7 +106,7 @@ export default function TermsPage() {
 
             <h2 className="text-2xl font-bold text-gunmetal mt-8 mb-4">12. Intellectual Property</h2>
             <p>
-              All content on this website, including text, images, logos, and design, is the property of Boise HVAC Pros and is protected by copyright and trademark laws. You may not reproduce, distribute, or use our content without written permission.
+              All content on this website, including text, images, logos, and design, is the property of Boise Roofing Pros and is protected by copyright and trademark laws. You may not reproduce, distribute, or use our content without written permission.
             </p>
 
             <h2 className="text-2xl font-bold text-gunmetal mt-8 mb-4">13. Dispute Resolution</h2>
@@ -125,7 +125,7 @@ export default function TermsPage() {
             </p>
             <ul>
               <li><strong>Phone:</strong> (208) 505-9352</li>
-              <li><strong>Email:</strong> info@hvac-boise.com</li>
+              <li><strong>Email:</strong> info@boise-roof-repair.com</li>
             </ul>
           </div>
 

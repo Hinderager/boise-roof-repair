@@ -2,9 +2,9 @@ import { Metadata } from 'next'
 import { Phone } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Customer Reviews & Testimonials | Boise HVAC Pros',
-  description: 'Customer Reviews & Testimonials - Boise HVAC Pros. Serving the Treasure Valley.',
-  alternates: { canonical: 'https://hvac-boise.com/about-us/testimonials' },
+  title: 'Customer Reviews & Testimonials | Boise Roof Repair Pros',
+  description: 'Customer Reviews & Testimonials - Boise Roof Repair Pros. Serving the Treasure Valley.',
+  alternates: { canonical: 'https://boise-roof-repair.com/about-us/testimonials' },
 }
 
 export default function TestimonialsPage() {

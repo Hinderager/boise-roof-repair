@@ -3,9 +3,9 @@ import Link from 'next/link'
 import { MapPin, Phone } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Service Areas | Cities We Serve | Boise HVAC Pros',
-  description: 'HVAC services throughout the Treasure Valley. Serving Boise, Meridian, Nampa, Caldwell, Eagle, and surrounding areas. Call (208) 505-9352.',
-  alternates: { canonical: 'https://hvac-boise.com/cities-served' },
+  title: 'Service Areas | Cities We Serve | Boise Roof Repair Pros',
+  description: 'Roofing services throughout the Treasure Valley. Serving Boise, Meridian, Nampa, Caldwell, Eagle, and surrounding areas. Call (208) 505-9352.',
+  alternates: { canonical: 'https://boise-roof-repair.com/cities-served' },
 }
 
 const cities = [
@@ -26,7 +26,7 @@ export default function CitiesServedPage() {
       <section className="py-16 bg-gradient-to-b from-dark-blue to-[#1a5a9e]">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Service Areas</h1>
-          <p className="text-xl text-gray-200 max-w-3xl mx-auto">Professional HVAC services throughout the Treasure Valley.</p>
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto">Professional Roofing services throughout the Treasure Valley.</p>
         </div>
       </section>
       <section className="py-16 bg-white">

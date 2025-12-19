@@ -4,23 +4,23 @@ import Link from 'next/link'
 import { CheckCircle, MapPin, Phone, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'HVAC Services Middleton Idaho | AC & Heating | Boise HVAC Pros',
-  description: 'Professional HVAC services in Middleton, Idaho. AC repair, furnace installation, heating services. Licensed & insured. 24/7 emergency service. Call (208) 505-9352.',
-  keywords: ['HVAC Middleton', 'AC repair Middleton Idaho', 'furnace repair Middleton', 'heating services Middleton', 'air conditioning Middleton'],
+  title: 'Roof Repair Services Middleton Idaho | Emergency & Storm Damage | Boise Roof Repair Pros',
+  description: 'Professional roof repair services in Middleton, Idaho. Leak repair, shingle replacement, storm damage repair. Licensed & insured. 24/7 emergency service. Call (208) 505-9352',
+  keywords: ['Roof Repair Middleton', 'Emergency roof repair Middleton Idaho', 'shingle repair Middleton', 'storm damage repair Middleton', 'roof leak repair Middleton'],
   alternates: {
-    canonical: 'https://hvac-boise.com/cities-served/middleton',
+    canonical: 'https://boise-roof-repair.com/cities-served/middleton',
   },
 }
 
 const neighborhoods = ['Downtown Middleton', 'North Middleton', 'South Middleton', 'Purple Sage']
 
 const services = [
-  { name: 'AC Repair', href: '/cities-served/middleton/ac-repair', description: 'Fast air conditioning repair' },
-  { name: 'AC Installation', href: '/cities-served/middleton/ac-installation', description: 'New AC system installation' },
-  { name: 'Furnace Repair', href: '/cities-served/middleton/furnace-repair', description: 'Expert furnace repair' },
-  { name: 'Furnace Installation', href: '/cities-served/middleton/furnace-installation', description: 'New furnace installation' },
-  { name: 'Heat Pump Service', href: '/cities-served/middleton/heat-pump-repair', description: 'Heat pump repair & install' },
-  { name: 'HVAC Maintenance', href: '/cities-served/middleton/hvac-maintenance', description: 'Preventive maintenance' },
+  { name: 'Emergency Leak Repair', href: '/cities-served/middleton/emergency-leak-repair', description: 'Fast roof leak repair' },
+  { name: 'Missing Shingles', href: '/cities-served/middleton/missing-shingles', description: 'Shingle replacement' },
+  { name: 'Storm Damage', href: '/cities-served/middleton/storm-damage', description: 'Storm damage repair' },
+  { name: 'Hail Damage', href: '/cities-served/middleton/hail-damage-repair', description: 'Hail damage repair' },
+  { name: 'Wind Damage', href: '/cities-served/middleton/wind-damage-repair', description: 'Wind damage repair' },
+  { name: 'Gutter Service', href: '/cities-served/middleton/gutter-cleaning', description: 'Gutter repair & cleaning' },
 ]
 
 export default function MiddletonPage() {
@@ -28,16 +28,16 @@ export default function MiddletonPage() {
     <main className="pt-20">
       <section className="relative py-24 md:py-32">
         <Image
-          src="/generated/middleton-hvac.webp"
-          alt="HVAC Services in Middleton, Idaho"
+          src="/generated/middleton-roof-repair.webp"
+          alt="Roof Repair Services in Middleton, Idaho"
           fill
           priority
           className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-dark-blue/90 to-dark-blue/70" />
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">HVAC Services in Middleton</h1>
-          <p className="text-xl text-gray-200 max-w-3xl mx-auto mb-8">Professional heating and cooling services for Middleton homes and businesses. Licensed, insured, and available 24/7.</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">Roof Repair Services in Middleton</h1>
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto mb-8">Professional roof repair services for Middleton homes and businesses. Licensed, insured, and available 24/7.</p>
           <a href="tel:2085059352" className="inline-flex items-center gap-2 bg-[#FFC845] text-dark-blue px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors">
             <Phone className="w-5 h-5" />(208) 505-9352
           </a>
@@ -47,10 +47,10 @@ export default function MiddletonPage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-dark-blue mb-6">Middleton HVAC Services</h2>
+            <h2 className="text-3xl font-bold text-dark-blue mb-6">Middleton Roof Repair Services</h2>
             <div className="prose prose-lg max-w-none text-gray-600 mb-8">
-              <p>Middleton is a charming small town between Star and Caldwell. With hot summers reaching into the 90s and cold winters, your HVAC system works hard year-round. When you need heating or cooling service in Middleton, Boise HVAC Pros is here to help.</p>
-              <p>We've served Middleton homeowners for years, handling everything from emergency AC repairs during summer heat waves to furnace installations before winter hits. Our technicians know Middleton homes and the unique HVAC challenges they face.</p>
+              <p>Middleton is a charming small town between Star and Caldwell. With hot summers reaching into the 90s and cold winters, your roof protects your home year-round. When you need roof repair service in Middleton, Boise Roof Repair Pros is here to help.</p>
+              <p>We've served Middleton homeowners for years, handling everything from emergency leak repairs during storms to shingle replacements and routine maintenance. Our technicians know Middleton homes and the unique roofing challenges they face.</p>
             </div>
 
             <h3 className="text-2xl font-bold text-dark-blue mb-6">Our Services in Middleton</h3>
@@ -85,7 +85,7 @@ export default function MiddletonPage() {
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700"><strong>24/7 Emergency:</strong> HVAC emergencies don't wait—neither do we.</span>
+                <span className="text-gray-700"><strong>24/7 Emergency:</strong> Roofing emergencies don't wait—neither do we.</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
@@ -94,7 +94,7 @@ export default function MiddletonPage() {
             </ul>
 
             <div className="mt-12 p-8 bg-dark-blue rounded-xl text-center">
-              <h3 className="text-2xl font-bold text-white mb-4">Need HVAC Service in Middleton?</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">Need Roofing Service in Middleton?</h3>
               <p className="text-gray-300 mb-6">Call us for a free estimate. We'll get your system running right.</p>
               <a href="tel:2085059352" className="inline-flex items-center gap-2 bg-[#FFC845] text-dark-blue px-8 py-3 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors">
                 <Phone className="w-5 h-5" />(208) 505-9352

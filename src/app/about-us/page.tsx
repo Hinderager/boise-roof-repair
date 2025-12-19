@@ -3,9 +3,9 @@ import Link from 'next/link'
 import { CheckCircle, Phone, Award, Shield, Users } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'About Us | Boise HVAC Pros',
-  description: 'Learn about Boise HVAC Pros. Local HVAC experts serving the Treasure Valley. Licensed, insured, and committed to quality service.',
-  alternates: { canonical: 'https://hvac-boise.com/about-us' },
+  title: 'About Us | Boise Roof Repair Pros',
+  description: 'Learn about Boise Roof Repair Pros. Local Roofing experts serving the Treasure Valley. Licensed, insured, and committed to quality service.',
+  alternates: { canonical: 'https://boise-roof-repair.com/about-us' },
 }
 
 export default function AboutPage() {
@@ -13,22 +13,22 @@ export default function AboutPage() {
     <main className="pt-20">
       <section className="py-16 bg-gradient-to-b from-dark-blue to-[#1a5a9e]">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">About Boise HVAC Pros</h1>
-          <p className="text-xl text-gray-200 max-w-3xl mx-auto">Your trusted local HVAC experts in the Treasure Valley.</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">About Boise Roof Repair Pros</h1>
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto">Your trusted local Roofing experts in the Treasure Valley.</p>
         </div>
       </section>
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none text-gray-600 mb-12">
-              <p>Boise HVAC Pros is a locally owned and operated HVAC company serving homeowners throughout the Treasure Valley. We provide complete heating and cooling services including AC repair, furnace installation, heat pump service, and preventive maintenance.</p>
+              <p>Boise Roof Repair Pros is a locally owned and operated Roofing company serving homeowners throughout the Treasure Valley. We provide complete roof repair services including AC repair, roof shingle installation, roofing system service, and preventive maintenance.</p>
               <p>Our team of licensed technicians is committed to providing honest, reliable service at fair prices. We believe in doing the job right the first time and standing behind our work.</p>
             </div>
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               <div className="text-center">
                 <Award className="w-12 h-12 text-[#FFC845] mx-auto mb-4" />
                 <h3 className="text-xl font-bold text-dark-blue mb-2">Licensed & Insured</h3>
-                <p className="text-gray-600">Fully licensed HVAC contractors with comprehensive insurance coverage.</p>
+                <p className="text-gray-600">Fully licensed Roofing contractors with comprehensive insurance coverage.</p>
               </div>
               <div className="text-center">
                 <Shield className="w-12 h-12 text-[#FFC845] mx-auto mb-4" />

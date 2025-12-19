@@ -12,13 +12,13 @@ interface HeroSectionProps {
 
 export function HeroSection({ city, headline, subheadline, image }: HeroSectionProps = {}) {
   const isHomePage = !city
-  const heroImage = image || "/generated/hero-hvac.webp"
+  const heroImage = image || "/generated/hero-roofing.webp"
 
   return (
     <section className="relative h-[580px] md:h-[900px] lg:h-[950px] flex items-start lg:items-center overflow-visible">
       <Image
         src={heroImage}
-        alt={city ? `Professional HVAC Services - ${city} Idaho` : "Professional HVAC Services - Boise Idaho"}
+        alt={city ? `Professional Roof Repair Services - ${city} Idaho` : "Professional Roof Repair Services - Boise Idaho"}
         fill priority quality={85} sizes="100vw"
         className="object-cover object-center"
         fetchPriority="high"
@@ -31,18 +31,18 @@ export function HeroSection({ city, headline, subheadline, image }: HeroSectionP
 
             {isHomePage ? (
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight uppercase tracking-tight mb-4 -mt-8 md:mt-0">
-                Boise <span className="text-[#0b7fb6] text-4xl sm:text-5xl md:text-6xl lg:text-7xl" style={{textShadow: '-1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white'}}>HVAC</span> Pros
+                Boise <span className="text-[#0b7fb6] text-4xl sm:text-5xl md:text-6xl lg:text-7xl" style={{textShadow: '-1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white'}}>Roof Repair</span>
                 <span className="hidden lg:block text-2xl mt-2 font-normal normal-case">Boise | Meridian | Nampa</span>
               </h1>
             ) : (
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight uppercase tracking-tight mb-4 -mt-8 md:mt-0">
                 <span className="text-[#0b7fb6] text-4xl sm:text-5xl md:text-6xl lg:text-7xl" style={{textShadow: '-1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white'}}>{city}</span>
-                <br /><span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">HVAC Services</span>
+                <br /><span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">Roof Repair</span>
               </h1>
             )}
 
             <h2 className="hidden lg:block text-lg sm:text-xl md:text-2xl font-bold text-white mb-4 md:mb-6 italic">
-              {subheadline || "Heating & Cooling You Can Count On"}
+              {subheadline || "Fast, Reliable Roof Repairs You Can Trust"}
             </h2>
 
             <div className="hidden md:flex text-sm sm:text-base md:text-2xl lg:text-lg text-white mb-4 md:mb-8 justify-center">

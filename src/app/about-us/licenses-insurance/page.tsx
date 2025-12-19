@@ -2,9 +2,9 @@ import { Metadata } from 'next'
 import { Phone } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Licenses & Insurance | Boise HVAC Pros',
-  description: 'Licenses & Insurance - Boise HVAC Pros. Serving the Treasure Valley.',
-  alternates: { canonical: 'https://hvac-boise.com/about-us/licenses-insurance' },
+  title: 'Licenses & Insurance | Boise Roof Repair Pros',
+  description: 'Licenses & Insurance - Boise Roof Repair Pros. Serving the Treasure Valley.',
+  alternates: { canonical: 'https://boise-roof-repair.com/about-us/licenses-insurance' },
 }
 
 export default function LicensesInsurancePage() {

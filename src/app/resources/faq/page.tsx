@@ -2,9 +2,9 @@ import { Metadata } from 'next'
 import { Phone } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Frequently Asked Questions | Boise HVAC Pros',
-  description: 'Frequently Asked Questions - Helpful HVAC information from Boise HVAC Pros.',
-  alternates: { canonical: 'https://hvac-boise.com/resources/faq' },
+  title: 'Frequently Asked Questions | Boise Roof Repair Pros',
+  description: 'Frequently Asked Questions - Helpful Roofing information from Boise Roof Repair Pros.',
+  alternates: { canonical: 'https://boise-roof-repair.com/resources/faq' },
 }
 
 export default function FAQPage() {

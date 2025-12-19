@@ -4,23 +4,23 @@ import Link from 'next/link'
 import { CheckCircle, MapPin, Phone, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'HVAC Services Meridian Idaho | AC & Heating | Boise HVAC Pros',
-  description: 'Professional HVAC services in Meridian, Idaho. AC repair, furnace installation, heating services. Licensed & insured. 24/7 emergency service. Call (208) 505-9352.',
-  keywords: ['HVAC Meridian', 'AC repair Meridian Idaho', 'furnace repair Meridian', 'heating services Meridian', 'air conditioning Meridian'],
+  title: 'Roof Repair Services Meridian Idaho | Emergency & Storm Damage | Boise Roof Repair Pros',
+  description: 'Professional roof repair services in Meridian, Idaho. Leak repair, shingle replacement, storm damage repair. Licensed & insured. 24/7 emergency service. Call (208) 505-9352',
+  keywords: ['Roof Repair Meridian', 'Emergency roof repair Meridian Idaho', 'shingle repair Meridian', 'storm damage repair Meridian', 'roof leak repair Meridian'],
   alternates: {
-    canonical: 'https://hvac-boise.com/cities-served/meridian',
+    canonical: 'https://boise-roof-repair.com/cities-served/meridian',
   },
 }
 
 const neighborhoods = ['Downtown Meridian', 'The Village', 'Paramount', 'Lochsa Falls', 'Tuscany', 'Silverstone', 'Spurwing', 'Heritage Grove', 'Bridgetower', 'Reflection Ridge', 'Ten Mile', 'South Meridian']
 
 const services = [
-  { name: 'AC Repair', href: '/cities-served/meridian/ac-repair', description: 'Fast air conditioning repair' },
-  { name: 'AC Installation', href: '/cities-served/meridian/ac-installation', description: 'New AC system installation' },
-  { name: 'Furnace Repair', href: '/cities-served/meridian/furnace-repair', description: 'Expert furnace repair' },
-  { name: 'Furnace Installation', href: '/cities-served/meridian/furnace-installation', description: 'New furnace installation' },
-  { name: 'Heat Pump Service', href: '/cities-served/meridian/heat-pump-repair', description: 'Heat pump repair & install' },
-  { name: 'HVAC Maintenance', href: '/cities-served/meridian/hvac-maintenance', description: 'Preventive maintenance' },
+  { name: 'Emergency Leak Repair', href: '/cities-served/meridian/emergency-leak-repair', description: 'Fast roof leak repair' },
+  { name: 'Missing Shingles', href: '/cities-served/meridian/missing-shingles', description: 'Shingle replacement' },
+  { name: 'Storm Damage', href: '/cities-served/meridian/storm-damage', description: 'Storm damage repair' },
+  { name: 'Hail Damage', href: '/cities-served/meridian/hail-damage-repair', description: 'Hail damage repair' },
+  { name: 'Wind Damage', href: '/cities-served/meridian/wind-damage-repair', description: 'Wind damage repair' },
+  { name: 'Gutter Service', href: '/cities-served/meridian/gutter-cleaning', description: 'Gutter repair & cleaning' },
 ]
 
 export default function MeridianPage() {
@@ -28,16 +28,16 @@ export default function MeridianPage() {
     <main className="pt-20">
       <section className="relative py-24 md:py-32">
         <Image
-          src="/generated/meridian-hvac.webp"
-          alt="HVAC Services in Meridian, Idaho"
+          src="/generated/meridian-roof-repair.webp"
+          alt="Roof Repair Services in Meridian, Idaho"
           fill
           priority
           className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-dark-blue/90 to-dark-blue/70" />
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">HVAC Services in Meridian</h1>
-          <p className="text-xl text-gray-200 max-w-3xl mx-auto mb-8">Professional heating and cooling services for Meridian homes and businesses. Licensed, insured, and available 24/7.</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">Roof Repair Services in Meridian</h1>
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto mb-8">Professional roof repair services for Meridian homes and businesses. Licensed, insured, and available 24/7.</p>
           <a href="tel:2085059352" className="inline-flex items-center gap-2 bg-[#FFC845] text-dark-blue px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors">
             <Phone className="w-5 h-5" />(208) 505-9352
           </a>
@@ -47,10 +47,10 @@ export default function MeridianPage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-dark-blue mb-6">Meridian HVAC Services</h2>
+            <h2 className="text-3xl font-bold text-dark-blue mb-6">Meridian Roof Repair Services</h2>
             <div className="prose prose-lg max-w-none text-gray-600 mb-8">
-              <p>Meridian is the second-largest and fastest-growing city in Idaho. With hot, dry summers and cold winters typical of the high desert climate, your HVAC system works hard year-round. When you need heating or cooling service in Meridian, Boise HVAC Pros is here to help.</p>
-              <p>We've served Meridian homeowners for years, handling everything from emergency AC repairs during summer heat waves to furnace installations before winter hits. Our technicians know Meridian homes and the unique HVAC challenges they face.</p>
+              <p>Meridian is the second-largest and fastest-growing city in Idaho. With hot, dry summers and cold winters typical of the high desert climate, your roof protects your home year-round. When you need roof repair service in Meridian, Boise Roof Repair Pros is here to help.</p>
+              <p>We've served Meridian homeowners for years, handling everything from emergency leak repairs during storms to shingle replacements and routine maintenance. Our technicians know Meridian homes and the unique roofing challenges they face.</p>
             </div>
 
             <h3 className="text-2xl font-bold text-dark-blue mb-6">Our Services in Meridian</h3>
@@ -85,7 +85,7 @@ export default function MeridianPage() {
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700"><strong>24/7 Emergency:</strong> HVAC emergencies don't wait—neither do we.</span>
+                <span className="text-gray-700"><strong>24/7 Emergency:</strong> Roofing emergencies don't wait—neither do we.</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
@@ -94,7 +94,7 @@ export default function MeridianPage() {
             </ul>
 
             <div className="mt-12 p-8 bg-dark-blue rounded-xl text-center">
-              <h3 className="text-2xl font-bold text-white mb-4">Need HVAC Service in Meridian?</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">Need Roofing Service in Meridian?</h3>
               <p className="text-gray-300 mb-6">Call us for a free estimate. We'll get your system running right.</p>
               <a href="tel:2085059352" className="inline-flex items-center gap-2 bg-[#FFC845] text-dark-blue px-8 py-3 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors">
                 <Phone className="w-5 h-5" />(208) 505-9352

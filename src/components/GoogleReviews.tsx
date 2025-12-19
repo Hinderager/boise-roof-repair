@@ -6,14 +6,14 @@ import { Button } from '@/components/ui/button'
 import { Star, ChevronLeft, ChevronRight } from 'lucide-react'
 
 const staticReviews = [
-  { author: 'Mike R.', relative_time: '2 weeks ago', rating: 5, text: 'Our AC stopped working on the hottest day of July. Called them and they had a tech out within 2 hours. Fixed the issue quickly and explained everything. Fair price, no pressure. Highly recommend!' },
-  { author: 'Sarah T.', relative_time: '1 month ago', rating: 5, text: 'Had them install a new furnace before winter hit. The crew was professional, cleaned up after themselves, and the new system works great. Our heating bills are noticeably lower now.' },
-  { author: 'David L.', relative_time: '3 weeks ago', rating: 5, text: 'Used them for annual HVAC maintenance. Tech was knowledgeable and thorough. Found a small issue before it became a big problem. Great preventive service at a reasonable price.' },
-  { author: 'Jennifer M.', relative_time: '2 months ago', rating: 5, text: 'Our heat pump was making strange noises. They diagnosed the problem accurately and had the parts to fix it same day. Very impressed with their expertise and efficiency.' },
-  { author: 'Chris B.', relative_time: '1 week ago', rating: 5, text: 'Honest company. They could have sold me a new AC unit but instead recommended a repair that cost a fraction. System has been running perfectly since. Will use them for all our HVAC needs.' },
-  { author: 'Amanda K.', relative_time: '1 month ago', rating: 5, text: 'Emergency furnace repair in January - they answered the phone at 10pm and had someone here by midnight. Saved us from a very cold night. These guys are the real deal.' },
-  { author: 'Tom H.', relative_time: '3 weeks ago', rating: 5, text: 'Just had a new AC system installed. From the estimate to final installation, everything was professional. The techs explained how to use the new thermostat and answered all my questions.' },
-  { author: 'Lisa P.', relative_time: '2 weeks ago', rating: 5, text: 'Best HVAC company in Boise. Fast response, fair prices, quality work. They serviced both our AC and furnace and everything runs perfectly now. Friendly staff too!' },
+  { author: 'Mike R.', relative_time: '2 weeks ago', rating: 5, text: 'Had a leak in our roof during a storm. Called them and they came out same day with a tarp, then fixed it properly the next morning. No water damage inside. Quick, professional, fair price.' },
+  { author: 'Sarah T.', relative_time: '1 month ago', rating: 5, text: 'Wind storm tore off several shingles. They matched the existing ones perfectly and you can\'t even tell where the repair was done. Great work at a reasonable cost.' },
+  { author: 'David L.', relative_time: '3 weeks ago', rating: 5, text: 'Found a leak in my garage ceiling. They tracked it down to damaged flashing around the chimney. Fixed it right and explained everything. Haven\'t had any issues since.' },
+  { author: 'Jennifer M.', relative_time: '2 months ago', rating: 5, text: 'Hail damage repair after a bad storm. They worked directly with our insurance and handled everything. Roof looks great and is fully watertight again.' },
+  { author: 'Chris B.', relative_time: '1 week ago', rating: 5, text: 'Honest roofers - rare these days. They could have pushed for a full replacement but showed me the roof had years left and just needed a few repairs. Saved me thousands.' },
+  { author: 'Amanda K.', relative_time: '1 month ago', rating: 5, text: 'Emergency leak repair at 11pm on a Saturday. They answered the phone and had someone here within an hour. Stopped the leak and came back to do permanent repairs. Lifesavers!' },
+  { author: 'Tom H.', relative_time: '3 weeks ago', rating: 5, text: 'Had them repair some damaged valley areas that were causing leaks. Thorough job, cleaned up completely, and the price was exactly what they quoted. Very happy with the service.' },
+  { author: 'Lisa P.', relative_time: '2 weeks ago', rating: 5, text: 'Best roof repair company in Boise. They fixed leak issues our previous roofer couldn\'t find. Fast response, quality repairs, and they stand behind their work. Highly recommend!' },
 ]
 
 export function GoogleReviews() {

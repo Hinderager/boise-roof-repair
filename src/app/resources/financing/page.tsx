@@ -2,9 +2,9 @@ import { Metadata } from 'next'
 import { Phone } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'HVAC Financing Options | Boise HVAC Pros',
-  description: 'HVAC Financing Options - Helpful HVAC information from Boise HVAC Pros.',
-  alternates: { canonical: 'https://hvac-boise.com/resources/financing' },
+  title: 'Roofing Financing Options | Boise Roof Repair Pros',
+  description: 'Roofing Financing Options - Helpful Roofing information from Boise Roof Repair Pros.',
+  alternates: { canonical: 'https://boise-roof-repair.com/resources/financing' },
 }
 
 export default function FinancingPage() {
@@ -12,13 +12,13 @@ export default function FinancingPage() {
     <main className="pt-20">
       <section className="py-16 bg-gradient-to-b from-dark-blue to-[#1a5a9e]">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white">HVAC Financing Options</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-white">Roofing Financing Options</h1>
         </div>
       </section>
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto prose prose-lg">
-            <p>Content for HVAC Financing Options coming soon.</p>
+            <p>Content for Roofing Financing Options coming soon.</p>
           </div>
         </div>
       </section>

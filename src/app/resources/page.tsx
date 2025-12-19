@@ -3,17 +3,17 @@ import Link from 'next/link'
 import { ArrowRight, Phone } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'HVAC Resources | Tips & Guides | Boise HVAC Pros',
-  description: 'HVAC resources, tips, and guides from Boise HVAC Pros. Learn about heating and cooling for your home.',
-  alternates: { canonical: 'https://hvac-boise.com/resources' },
+  title: 'Roofing Resources | Tips & Guides | Boise Roof Repair Pros',
+  description: 'Roofing resources, tips, and guides from Boise Roof Repair Pros. Learn about roof repair and maintenance for your home.',
+  alternates: { canonical: 'https://boise-roof-repair.com/resources' },
 }
 
 const resources = [
   { name: 'FAQ', slug: 'faq', title: 'Frequently Asked Questions' },
-  { name: 'HVAC Tips', slug: 'hvac-tips', title: 'DIY HVAC Tips' },
+  { name: 'Roofing Tips', slug: 'roofing-tips', title: 'DIY Roofing Tips' },
   { name: 'Repair vs Replace', slug: 'repair-vs-replace', title: 'Should You Repair or Replace?' },
-  { name: 'Financing', slug: 'financing', title: 'HVAC Financing Options' },
-  { name: 'Maintenance Plans', slug: 'maintenance-plans', title: 'HVAC Maintenance Agreements' },
+  { name: 'Financing', slug: 'financing', title: 'Roofing Financing Options' },
+  { name: 'Maintenance Plans', slug: 'maintenance-plans', title: 'Roofing Maintenance Agreements' },
 ]
 
 export default function ResourcesPage() {
@@ -21,7 +21,7 @@ export default function ResourcesPage() {
     <main className="pt-20">
       <section className="py-16 bg-gradient-to-b from-dark-blue to-[#1a5a9e]">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">HVAC Resources</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Roofing Resources</h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">Helpful information for homeowners.</p>
         </div>
       </section>

@@ -3,10 +3,34 @@ import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
 const services = [
-  { title: 'AC Repair & Service', description: 'When your AC stops cooling on a hot Boise summer day, you need help fast. We diagnose the problem quickly and fix it right the first time. Whether it\'s a refrigerant leak, compressor issue, or electrical problem—we\'ve seen it all and know how to get your system running again.', image: '/generated/ac-repair.webp', link: '/ac-repair', buttonText: 'Learn More' },
-  { title: 'Furnace Repair & Installation', description: 'Idaho winters don\'t mess around. When your furnace goes out, we respond fast to get your heat back on. From pilot light problems to complete system failures, our techs handle it all. And if you need a new furnace, we\'ll help you choose the right one for your home and budget.', image: '/generated/furnace-installation.webp', link: '/furnace-installation', buttonText: 'Learn More' },
-  { title: 'Preventive Maintenance', description: 'The best way to avoid emergency repairs? Regular maintenance. We inspect, clean, and tune your system so it runs efficiently and catches small problems before they become expensive disasters. Most breakdowns are preventable with proper care.', image: '/generated/hvac-maintenance.webp', link: '/hvac-maintenance', buttonText: 'Learn More' },
-  { title: '24/7 Emergency Service', description: 'No heat at 2 AM in January? AC died during a 100-degree heat wave? Some things can\'t wait until Monday. Our emergency technicians are available around the clock, every day of the year. We\'ll get to you fast and fix the problem so you can get back to comfortable.', image: '/generated/emergency-hvac.webp', link: '/emergency-hvac', buttonText: 'Learn More' },
+  {
+    title: 'Leak Repair',
+    description: 'Found a leak? We act fast to stop water damage and fix the source. Most leaks can be repaired same-day.',
+    image: '/generated/leak-repair.webp',
+    link: '/services/leak-repair',
+    buttonText: 'Learn More'
+  },
+  {
+    title: 'Shingle Repair & Replacement',
+    description: 'Missing or damaged shingles leave your roof vulnerable. We match your existing shingles and make repairs that last.',
+    image: '/generated/shingle-repair.webp',
+    link: '/services/shingle-repair',
+    buttonText: 'Learn More'
+  },
+  {
+    title: 'Storm Damage Repair',
+    description: 'Idaho storms can be brutal on roofs. We handle wind damage, hail damage, and fallen tree limbs.',
+    image: '/generated/storm-damage.webp',
+    link: '/services/storm-damage',
+    buttonText: 'Learn More'
+  },
+  {
+    title: '24/7 Emergency Service',
+    description: 'Roof emergency at 2 AM? We answer the phone and get someone to your property fast to prevent further damage.',
+    image: '/generated/emergency-repair.webp',
+    link: '/services/emergency-repair',
+    buttonText: 'Learn More'
+  }
 ]
 
 export function ServicesShowcase() {
@@ -15,7 +39,7 @@ export function ServicesShowcase() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-dark-blue mb-4 uppercase" style={{textShadow: '2px 2px 3px rgba(0,0,0,0.3), 1px 1px 2px rgba(0,0,0,0.2)'}}>Serving Boise and the Treasure Valley</h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto">From Boise to Nampa, Meridian to Caldwell, we keep homes and businesses comfortable year-round with reliable HVAC service.</p>
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto">From Boise to Nampa, Meridian to Caldwell, we provide reliable roof repair service to keep your home protected.</p>
         </div>
 
         <div className="max-w-7xl mx-auto space-y-16">

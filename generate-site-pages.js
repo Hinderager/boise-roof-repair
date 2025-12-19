@@ -6,10 +6,10 @@ const path = require('path');
 // ========================================
 
 const siteConfig = {
-  businessName: 'Boise HVAC Pros',
+  businessName: 'Boise Roof Repair Pros',
   phone: '(208) 505-9352',
   phoneRaw: '2085059352',
-  domain: 'hvac-boise.com',
+  domain: 'boise-roof-repair.com',
   region: 'Treasure Valley',
   state: 'Idaho',
   stateAbbr: 'ID',
@@ -103,229 +103,211 @@ const locations = [
 // Service categories and their sub-services
 const serviceCategories = [
   {
-    slug: 'air-conditioning',
-    name: 'Air Conditioning',
-    shortName: 'AC',
-    description: 'Complete air conditioning services including repair, maintenance, and installation for homes and businesses.',
+    slug: 'leak-repair',
+    name: 'Leak Repair',
+    shortName: 'Leak Repair',
+    description: 'Professional roof leak repair services to stop water damage and protect your home.',
     services: [
       {
-        slug: 'ac-repair',
-        name: 'AC Repair',
-        title: 'AC Repair',
-        metaTitle: 'AC Repair {city} | Air Conditioning Repair | Boise HVAC Pros',
-        description: 'Fast, reliable air conditioning repair services. We fix all AC brands and models.',
-        problems: ['AC not cooling', 'AC blowing warm air', 'AC making strange noises', 'AC not turning on', 'High energy bills', 'Uneven cooling', 'Refrigerant leaks', 'Frozen evaporator coil'],
+        slug: 'emergency-leak-repair',
+        name: 'Emergency Leak Repair',
+        title: 'Emergency Roof Leak Repair',
+        metaTitle: 'Emergency Roof Leak Repair {city} | 24/7 Service | Boise Roof Repair Pros',
+        description: '24/7 emergency roof leak repair when you need it most. Fast response to stop water damage.',
+        problems: ['Active roof leaks', 'Water stains on ceiling', 'Dripping water inside', 'Storm damage leaks', 'Ice dam leaks'],
         emergency: true
       },
       {
-        slug: 'ac-maintenance',
-        name: 'AC Maintenance',
-        title: 'AC Maintenance & Tune-Up',
-        metaTitle: 'AC Maintenance {city} | Air Conditioning Tune-Up | Boise HVAC Pros',
-        description: 'Professional AC maintenance and tune-up services to keep your system running efficiently.',
-        benefits: ['Improved efficiency', 'Lower energy bills', 'Extended equipment life', 'Fewer breakdowns', 'Better air quality', 'Maintained warranty'],
+        slug: 'chimney-leak-repair',
+        name: 'Chimney Leak Repair',
+        title: 'Chimney Leak Repair & Flashing',
+        metaTitle: 'Chimney Leak Repair {city} | Chimney Flashing | Boise Roof Repair Pros',
+        description: 'Expert chimney leak repair and flashing replacement to stop water intrusion.',
+        signs: ['Water stains around chimney', 'Damaged flashing', 'Cracks in chimney', 'Missing mortar'],
         emergency: false
       },
       {
-        slug: 'ac-installation',
-        name: 'AC Installation',
-        title: 'AC Installation & Replacement',
-        metaTitle: 'AC Installation {city} | New Air Conditioner | Boise HVAC Pros',
-        description: 'Professional air conditioning installation and replacement services.',
-        considerations: ['Home size', 'Efficiency ratings (SEER)', 'Budget', 'Existing ductwork', 'Brand preferences', 'Warranty options'],
-        emergency: false
-      },
-      {
-        slug: 'emergency-ac-repair',
-        name: 'Emergency AC Repair',
-        title: '24/7 Emergency AC Repair',
-        metaTitle: 'Emergency AC Repair {city} | 24/7 Service | Boise HVAC Pros',
-        description: '24/7 emergency air conditioning repair when you need it most.',
-        situations: ['AC died during heat wave', 'No cooling at all', 'AC making dangerous sounds', 'Electrical burning smell', 'System flooding'],
-        emergency: true
-      },
-      {
-        slug: 'refrigerant-leak-repair',
-        name: 'Refrigerant Leak Repair',
-        title: 'Refrigerant Leak Detection & Repair',
-        metaTitle: 'Refrigerant Leak Repair {city} | AC Freon Service | Boise HVAC Pros',
-        description: 'Expert refrigerant leak detection and repair services.',
-        signs: ['AC not cooling properly', 'Ice on refrigerant lines', 'Hissing sounds', 'Higher than normal energy bills'],
-        emergency: false
-      },
-      {
-        slug: 'thermostat-repair',
-        name: 'Thermostat Repair',
-        title: 'Thermostat Repair & Installation',
-        metaTitle: 'Thermostat Repair {city} | Smart Thermostat Install | Boise HVAC Pros',
-        description: 'Thermostat repair, replacement, and smart thermostat installation.',
-        types: ['Smart thermostats', 'Programmable thermostats', 'Wi-Fi thermostats', 'Traditional thermostats'],
+        slug: 'valley-leak-repair',
+        name: 'Valley Leak Repair',
+        title: 'Roof Valley Leak Repair',
+        metaTitle: 'Roof Valley Leak Repair {city} | Valley Flashing | Boise Roof Repair Pros',
+        description: 'Professional roof valley leak repair and valley flashing replacement.',
+        problems: ['Pooling water in valleys', 'Damaged valley flashing', 'Valley shingle damage', 'Improper valley installation'],
         emergency: false
       },
     ]
   },
   {
-    slug: 'heating',
-    name: 'Heating',
-    shortName: 'Heating',
-    description: 'Complete heating services including heater repair, maintenance, and installation.',
+    slug: 'shingle-repair',
+    name: 'Shingle Repair',
+    shortName: 'Shingle Repair',
+    description: 'Expert shingle repair and replacement services for all types of asphalt and composite shingles.',
     services: [
       {
-        slug: 'heater-repair',
-        name: 'Heater Repair',
-        title: 'Heater Repair',
-        metaTitle: 'Heater Repair {city} | Heating System Repair | Boise HVAC Pros',
-        description: 'Fast, reliable heater repair services for all types of heating systems.',
-        problems: ['No heat', 'Heater blowing cold air', 'Strange noises', 'Short cycling', 'High heating bills', 'Uneven heating', 'Pilot light issues'],
+        slug: 'missing-shingles',
+        name: 'Missing Shingles',
+        title: 'Missing Shingle Replacement',
+        metaTitle: 'Missing Shingle Repair {city} | Shingle Replacement | Boise Roof Repair Pros',
+        description: 'Fast missing shingle replacement to protect your roof from water damage.',
+        causes: ['Wind damage', 'Age and wear', 'Poor installation', 'Storm damage'],
         emergency: true
       },
       {
-        slug: 'heater-maintenance',
-        name: 'Heater Maintenance',
-        title: 'Heater Maintenance & Tune-Up',
-        metaTitle: 'Heater Maintenance {city} | Heating Tune-Up | Boise HVAC Pros',
-        description: 'Professional heater maintenance to keep your system running safely and efficiently.',
-        benefits: ['Improved safety', 'Better efficiency', 'Lower bills', 'Extended lifespan', 'Fewer repairs', 'Peace of mind'],
+        slug: 'damaged-shingles',
+        name: 'Damaged Shingles',
+        title: 'Damaged Shingle Repair',
+        metaTitle: 'Damaged Shingle Repair {city} | Cracked Shingles | Boise Roof Repair Pros',
+        description: 'Professional repair of cracked, curled, or damaged shingles.',
+        signs: ['Curling shingles', 'Cracked shingles', 'Granule loss', 'Blistering shingles', 'Broken tabs'],
         emergency: false
       },
       {
-        slug: 'heater-installation',
-        name: 'Heater Installation',
-        title: 'Heater Installation & Replacement',
-        metaTitle: 'Heater Installation {city} | New Heating System | Boise HVAC Pros',
-        description: 'Professional heater installation and replacement services.',
-        types: ['Gas heaters', 'Electric heaters', 'Heat pumps', 'Ductless systems'],
-        emergency: false
+        slug: 'wind-damage',
+        name: 'Wind Damage',
+        title: 'Wind Damage Shingle Repair',
+        metaTitle: 'Wind Damage Shingle Repair {city} | Storm Damage | Boise Roof Repair Pros',
+        description: 'Expert repair of wind-damaged shingles and storm damage.',
+        problems: ['Lifted shingles', 'Torn shingles', 'Blown-off shingles', 'Exposed underlayment'],
+        emergency: true
       },
     ]
   },
   {
-    slug: 'furnaces',
-    name: 'Furnaces',
-    shortName: 'Furnace',
-    description: 'Complete furnace services including repair, maintenance, and installation.',
+    slug: 'emergency-repair',
+    name: 'Emergency Repair',
+    shortName: 'Emergency',
+    description: '24/7 emergency roof repair services for urgent roofing problems.',
     services: [
       {
-        slug: 'furnace-repair',
-        name: 'Furnace Repair',
-        title: 'Furnace Repair',
-        metaTitle: 'Furnace Repair {city} | Gas & Electric Furnace Service | Boise HVAC Pros',
-        description: 'Expert furnace repair services for gas and electric furnaces.',
-        problems: ['Furnace not heating', 'Furnace blowing cold air', 'Strange noises', 'Short cycling', 'Yellow pilot light', 'Burning smell', 'High gas bills'],
+        slug: '24-7-service',
+        name: '24/7 Emergency Service',
+        title: '24/7 Emergency Roof Repair',
+        metaTitle: '24/7 Emergency Roof Repair {city} | Immediate Service | Boise Roof Repair Pros',
+        description: 'Round-the-clock emergency roof repair service. We are here when you need us most.',
+        situations: ['Active leaks', 'Storm damage', 'Tree damage', 'Major wind damage', 'Structural damage'],
         emergency: true
       },
       {
-        slug: 'furnace-maintenance',
-        name: 'Furnace Maintenance',
-        title: 'Furnace Maintenance & Tune-Up',
-        metaTitle: 'Furnace Maintenance {city} | Furnace Tune-Up | Boise HVAC Pros',
-        description: 'Professional furnace maintenance to ensure safe, efficient operation.',
-        includes: ['Heat exchanger inspection', 'Burner cleaning', 'Safety control testing', 'Filter replacement', 'Thermostat calibration', 'Carbon monoxide testing'],
-        emergency: false
-      },
-      {
-        slug: 'furnace-installation',
-        name: 'Furnace Installation',
-        title: 'Furnace Installation & Replacement',
-        metaTitle: 'Furnace Installation {city} | New Furnace | Boise HVAC Pros',
-        description: 'Professional furnace installation and replacement services.',
-        types: ['Gas furnaces', 'Electric furnaces', 'High-efficiency furnaces', 'Variable-speed furnaces'],
-        emergency: false
-      },
-    ]
-  },
-  {
-    slug: 'heat-pumps',
-    name: 'Heat Pumps',
-    shortName: 'Heat Pump',
-    description: 'Complete heat pump services including repair, maintenance, and installation.',
-    services: [
-      {
-        slug: 'heat-pump-repair',
-        name: 'Heat Pump Repair',
-        title: 'Heat Pump Repair',
-        metaTitle: 'Heat Pump Repair {city} | Heat Pump Service | Boise HVAC Pros',
-        description: 'Expert heat pump repair services for all brands and models.',
-        problems: ['Heat pump not heating', 'Heat pump not cooling', 'Frozen coils', 'Strange noises', 'Short cycling', 'High energy bills'],
+        slug: 'storm-damage',
+        name: 'Storm Damage',
+        title: 'Storm Damage Roof Repair',
+        metaTitle: 'Storm Damage Roof Repair {city} | Hail & Wind | Boise Roof Repair Pros',
+        description: 'Fast storm damage roof repair after severe weather events.',
+        types: ['Hail damage', 'Wind damage', 'Lightning damage', 'Heavy rain damage', 'Snow load damage'],
         emergency: true
       },
       {
-        slug: 'heat-pump-maintenance',
-        name: 'Heat Pump Maintenance',
-        title: 'Heat Pump Maintenance',
-        metaTitle: 'Heat Pump Maintenance {city} | Heat Pump Tune-Up | Boise HVAC Pros',
-        description: 'Professional heat pump maintenance for year-round efficiency.',
-        benefits: ['Bi-annual service recommended', 'Improved efficiency', 'Extended lifespan', 'Fewer repairs', 'Optimal performance'],
+        slug: 'temporary-tarping',
+        name: 'Temporary Tarping',
+        title: 'Emergency Roof Tarping',
+        metaTitle: 'Emergency Roof Tarping {city} | Temporary Roof Cover | Boise Roof Repair Pros',
+        description: 'Emergency roof tarping to prevent further water damage until permanent repairs can be made.',
+        when: ['After storm damage', 'Major leak discovered', 'Tree falls on roof', 'Before permanent repairs'],
+        emergency: true
+      },
+    ]
+  },
+  {
+    slug: 'storm-damage',
+    name: 'Storm Damage',
+    shortName: 'Storm Damage',
+    description: 'Complete storm damage roof repair including hail damage, wind damage, and tree damage.',
+    services: [
+      {
+        slug: 'hail-damage-repair',
+        name: 'Hail Damage Repair',
+        title: 'Hail Damage Roof Repair',
+        metaTitle: 'Hail Damage Roof Repair {city} | Insurance Claims | Boise Roof Repair Pros',
+        description: 'Professional hail damage roof repair with insurance claim assistance.',
+        signs: ['Dented shingles', 'Cracked shingles', 'Granule loss', 'Dented vents or flashing', 'Gutter damage'],
         emergency: false
       },
       {
-        slug: 'heat-pump-installation',
-        name: 'Heat Pump Installation',
-        title: 'Heat Pump Installation',
-        metaTitle: 'Heat Pump Installation {city} | New Heat Pump | Boise HVAC Pros',
-        description: 'Professional heat pump installation and replacement services.',
-        types: ['Air-source heat pumps', 'Ductless mini-splits', 'Dual-fuel systems', 'High-efficiency models'],
+        slug: 'wind-damage-repair',
+        name: 'Wind Damage Repair',
+        title: 'Wind Damage Roof Repair',
+        metaTitle: 'Wind Damage Roof Repair {city} | Storm Repair | Boise Roof Repair Pros',
+        description: 'Expert wind damage roof repair for all types of wind-related roofing damage.',
+        problems: ['Missing shingles', 'Lifted shingles', 'Torn shingles', 'Damaged flashing', 'Exposed decking'],
+        emergency: true
+      },
+      {
+        slug: 'tree-damage-repair',
+        name: 'Tree Damage Repair',
+        title: 'Tree Damage Roof Repair',
+        metaTitle: 'Tree Damage Roof Repair {city} | Emergency Service | Boise Roof Repair Pros',
+        description: 'Emergency tree damage roof repair and restoration services.',
+        includes: ['Tree removal coordination', 'Structural assessment', 'Temporary tarping', 'Full repair or replacement'],
+        emergency: true
+      },
+    ]
+  },
+  {
+    slug: 'flat-roof-repair',
+    name: 'Flat Roof Repair',
+    shortName: 'Flat Roof',
+    description: 'Specialized flat roof repair services for commercial and residential flat roofing systems.',
+    services: [
+      {
+        slug: 'membrane-repair',
+        name: 'Membrane Repair',
+        title: 'Flat Roof Membrane Repair',
+        metaTitle: 'Flat Roof Membrane Repair {city} | TPO & EPDM | Boise Roof Repair Pros',
+        description: 'Professional flat roof membrane repair for TPO, EPDM, and other roofing membranes.',
+        types: ['TPO membrane', 'EPDM membrane', 'PVC membrane', 'Modified bitumen'],
+        emergency: false
+      },
+      {
+        slug: 'ponding-water',
+        name: 'Ponding Water',
+        title: 'Ponding Water Repair',
+        metaTitle: 'Ponding Water Repair {city} | Flat Roof Drainage | Boise Roof Repair Pros',
+        description: 'Fix ponding water issues on flat roofs before they cause serious damage.',
+        problems: ['Standing water', 'Poor drainage', 'Sagging roof deck', 'Membrane deterioration'],
+        emergency: false
+      },
+      {
+        slug: 'flashing-repair',
+        name: 'Flashing Repair',
+        title: 'Flat Roof Flashing Repair',
+        metaTitle: 'Flat Roof Flashing Repair {city} | Parapet Walls | Boise Roof Repair Pros',
+        description: 'Expert flat roof flashing repair around parapet walls, vents, and penetrations.',
+        areas: ['Parapet walls', 'HVAC units', 'Pipe penetrations', 'Expansion joints', 'Roof edges'],
         emergency: false
       },
     ]
   },
   {
-    slug: 'indoor-air-quality',
-    name: 'Indoor Air Quality',
-    shortName: 'IAQ',
-    description: 'Indoor air quality services to improve the air you breathe.',
+    slug: 'gutter-repair',
+    name: 'Gutter Repair',
+    shortName: 'Gutter',
+    description: 'Complete gutter repair, cleaning, and replacement services.',
     services: [
       {
-        slug: 'air-purifiers',
-        name: 'Air Purifiers',
-        title: 'Air Purifier Installation',
-        metaTitle: 'Air Purifier Installation {city} | Whole-Home Air Purification | Boise HVAC Pros',
-        description: 'Whole-home air purifier installation for cleaner, healthier indoor air.',
-        benefits: ['Remove allergens', 'Eliminate odors', 'Kill bacteria and viruses', 'Reduce dust', 'Improve respiratory health'],
+        slug: 'gutter-cleaning',
+        name: 'Gutter Cleaning',
+        title: 'Professional Gutter Cleaning',
+        metaTitle: 'Gutter Cleaning {city} | Downspout Cleaning | Boise Roof Repair Pros',
+        description: 'Professional gutter cleaning to prevent water damage and maintain proper drainage.',
+        benefits: ['Prevent water damage', 'Avoid foundation problems', 'Prevent ice dams', 'Extend gutter life', 'Prevent basement flooding'],
         emergency: false
       },
       {
-        slug: 'duct-cleaning',
-        name: 'Duct Cleaning',
-        title: 'Air Duct Cleaning',
-        metaTitle: 'Duct Cleaning {city} | Air Duct Cleaning Service | Boise HVAC Pros',
-        description: 'Professional air duct cleaning to remove dust, debris, and allergens.',
-        signs: ['Visible dust at vents', 'Musty odors', 'Allergy symptoms', 'Excessive dust in home', 'Recent construction'],
+        slug: 'downspout-repair',
+        name: 'Downspout Repair',
+        title: 'Downspout Repair & Replacement',
+        metaTitle: 'Downspout Repair {city} | Gutter Downspouts | Boise Roof Repair Pros',
+        description: 'Downspout repair and replacement to ensure proper roof drainage.',
+        problems: ['Disconnected downspouts', 'Damaged downspouts', 'Clogged downspouts', 'Improper drainage'],
         emergency: false
       },
       {
-        slug: 'uv-light-installation',
-        name: 'UV Light Installation',
-        title: 'UV Light Installation',
-        metaTitle: 'UV Light Installation {city} | HVAC UV Lights | Boise HVAC Pros',
-        description: 'UV light installation for your HVAC system to kill mold, bacteria, and viruses.',
-        benefits: ['Kill airborne pathogens', 'Prevent mold growth', 'Reduce odors', 'Improve air quality', 'Protect HVAC equipment'],
-        emergency: false
-      },
-    ]
-  },
-  {
-    slug: 'ductwork',
-    name: 'Ductwork',
-    shortName: 'Duct',
-    description: 'Ductwork services including repair, replacement, and sealing.',
-    services: [
-      {
-        slug: 'duct-repair',
-        name: 'Duct Repair',
-        title: 'Ductwork Repair & Sealing',
-        metaTitle: 'Duct Repair {city} | Ductwork Sealing | Boise HVAC Pros',
-        description: 'Professional ductwork repair and sealing services.',
-        problems: ['Leaky ducts', 'Damaged ductwork', 'Poor airflow', 'Hot/cold spots', 'High energy bills', 'Noisy ducts'],
-        emergency: false
-      },
-      {
-        slug: 'duct-replacement',
-        name: 'Duct Replacement',
-        title: 'Ductwork Replacement',
-        metaTitle: 'Duct Replacement {city} | New Ductwork Installation | Boise HVAC Pros',
-        description: 'Complete ductwork replacement and installation services.',
-        signs: ['Old, deteriorating ducts', 'Major damage', 'Rodent infestation', 'Improper sizing', 'Poor design'],
+        slug: 'gutter-replacement',
+        name: 'Gutter Replacement',
+        title: 'Gutter Replacement & Installation',
+        metaTitle: 'Gutter Replacement {city} | New Gutters | Boise Roof Repair Pros',
+        description: 'Complete gutter replacement and installation services.',
+        types: ['Seamless gutters', 'Aluminum gutters', 'Copper gutters', 'Gutter guards'],
         emergency: false
       },
     ]
@@ -335,10 +317,10 @@ const serviceCategories = [
 // Additional standalone pages
 const additionalPages = {
   about: [
-    { slug: 'about-us', name: 'About Us', title: 'About Boise HVAC Pros' },
+    { slug: 'about-us', name: 'About Us', title: 'About Boise Roof Repair Pros' },
     { slug: 'testimonials', name: 'Testimonials', title: 'Customer Reviews & Testimonials' },
     { slug: 'licenses-insurance', name: 'Licenses & Insurance', title: 'Licenses & Insurance' },
-    { slug: 'why-choose-us', name: 'Why Choose Us', title: 'Why Choose Boise HVAC Pros' },
+    { slug: 'why-choose-us', name: 'Why Choose Us', title: 'Why Choose Boise Roof Repair Pros' },
     { slug: 'careers', name: 'Careers', title: 'Career Opportunities' },
   ],
   resources: [
@@ -557,9 +539,9 @@ import Link from 'next/link'
 import { CheckCircle, MapPin, Phone, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'HVAC Services ${location.name} ${siteConfig.state} | AC & Heating | ${siteConfig.businessName}',
-  description: 'Professional HVAC services in ${location.name}, ${siteConfig.state}. AC repair, furnace installation, heating services. Licensed & insured. 24/7 emergency service. Call ${siteConfig.phone}.',
-  keywords: ['HVAC ${location.name}', 'AC repair ${location.name} ${siteConfig.state}', 'furnace repair ${location.name}', 'heating services ${location.name}', 'air conditioning ${location.name}'],
+  title: 'Roof Repair Services ${location.name} ${siteConfig.state} | Emergency & Storm Damage | ${siteConfig.businessName}',
+  description: 'Professional roof repair services in ${location.name}, ${siteConfig.state}. Leak repair, shingle replacement, storm damage repair. Licensed & insured. 24/7 emergency service. Call ${siteConfig.phone}',
+  keywords: ['Roof Repair ${location.name}', 'Emergency roof repair ${location.name} Idaho', 'shingle repair ${location.name}', 'storm damage repair ${location.name}', 'roof leak repair ${location.name}'],
   alternates: {
     canonical: 'https://${siteConfig.domain}/cities-served/${location.slug}',
   },
@@ -568,12 +550,12 @@ export const metadata: Metadata = {
 const neighborhoods = [${neighborhoodsList}]
 
 const services = [
-  { name: 'AC Repair', href: '/cities-served/${location.slug}/ac-repair', description: 'Fast air conditioning repair' },
-  { name: 'AC Installation', href: '/cities-served/${location.slug}/ac-installation', description: 'New AC system installation' },
-  { name: 'Furnace Repair', href: '/cities-served/${location.slug}/furnace-repair', description: 'Expert furnace repair' },
-  { name: 'Furnace Installation', href: '/cities-served/${location.slug}/furnace-installation', description: 'New furnace installation' },
-  { name: 'Heat Pump Service', href: '/cities-served/${location.slug}/heat-pump-repair', description: 'Heat pump repair & install' },
-  { name: 'HVAC Maintenance', href: '/cities-served/${location.slug}/hvac-maintenance', description: 'Preventive maintenance' },
+  { name: 'Emergency Leak Repair', href: '/cities-served/${location.slug}/emergency-leak-repair', description: 'Fast roof leak repair' },
+  { name: 'Missing Shingles', href: '/cities-served/${location.slug}/missing-shingles', description: 'Shingle replacement' },
+  { name: 'Storm Damage', href: '/cities-served/${location.slug}/storm-damage', description: 'Storm damage repair' },
+  { name: 'Hail Damage', href: '/cities-served/${location.slug}/hail-damage-repair', description: 'Hail damage repair' },
+  { name: 'Wind Damage', href: '/cities-served/${location.slug}/wind-damage-repair', description: 'Wind damage repair' },
+  { name: 'Gutter Service', href: '/cities-served/${location.slug}/gutter-cleaning', description: 'Gutter repair & cleaning' },
 ]
 
 export default function ${location.name.replace(/[\s-]+/g, '')}Page() {
@@ -581,16 +563,16 @@ export default function ${location.name.replace(/[\s-]+/g, '')}Page() {
     <main className="pt-20">
       <section className="relative py-24 md:py-32">
         <Image
-          src="/generated/${location.slug}-hvac.webp"
-          alt="HVAC Services in ${location.name}, ${siteConfig.state}"
+          src="/generated/${location.slug}-roof-repair.webp"
+          alt="Roof Repair Services in ${location.name}, ${siteConfig.state}"
           fill
           priority
           className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-dark-blue/90 to-dark-blue/70" />
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">HVAC Services in ${location.name}</h1>
-          <p className="text-xl text-gray-200 max-w-3xl mx-auto mb-8">Professional heating and cooling services for ${location.name} homes and businesses. Licensed, insured, and available 24/7.</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">Roof Repair Services in ${location.name}</h1>
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto mb-8">Professional roof repair services for ${location.name} homes and businesses. Licensed, insured, and available 24/7.</p>
           <a href="tel:${siteConfig.phoneRaw}" className="inline-flex items-center gap-2 bg-[#FFC845] text-dark-blue px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors">
             <Phone className="w-5 h-5" />${siteConfig.phone}
           </a>
@@ -600,10 +582,10 @@ export default function ${location.name.replace(/[\s-]+/g, '')}Page() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-dark-blue mb-6">${location.name} HVAC Services</h2>
+            <h2 className="text-3xl font-bold text-dark-blue mb-6">${location.name} Roof Repair Services</h2>
             <div className="prose prose-lg max-w-none text-gray-600 mb-8">
-              <p>${location.name} is ${location.description}. With ${location.climate}, your HVAC system works hard year-round. When you need heating or cooling service in ${location.name}, ${siteConfig.businessName} is here to help.</p>
-              <p>We've served ${location.name} homeowners for years, handling everything from emergency AC repairs during summer heat waves to furnace installations before winter hits. Our technicians know ${location.name} homes and the unique HVAC challenges they face.</p>
+              <p>${location.name} is ${location.description}. With ${location.climate}, your roof protects your home year-round. When you need roof repair service in ${location.name}, ${siteConfig.businessName} is here to help.</p>
+              <p>We've served ${location.name} homeowners for years, handling everything from emergency leak repairs during storms to shingle replacements and routine maintenance. Our technicians know ${location.name} homes and the unique roofing challenges they face.</p>
             </div>
 
             <h3 className="text-2xl font-bold text-dark-blue mb-6">Our Services in ${location.name}</h3>
@@ -854,14 +836,14 @@ function generateAllPages() {
 
     // Location + service pages (key services only to keep manageable)
     const keyServices = [
-      { slug: 'ac-repair', name: 'AC Repair', category: serviceCategories[0] },
-      { slug: 'ac-installation', name: 'AC Installation', category: serviceCategories[0] },
-      { slug: 'ac-maintenance', name: 'AC Maintenance', category: serviceCategories[0] },
-      { slug: 'furnace-repair', name: 'Furnace Repair', category: serviceCategories[2] },
-      { slug: 'furnace-installation', name: 'Furnace Installation', category: serviceCategories[2] },
-      { slug: 'heat-pump-repair', name: 'Heat Pump Repair', category: serviceCategories[3] },
-      { slug: 'heat-pump-installation', name: 'Heat Pump Installation', category: serviceCategories[3] },
-      { slug: 'hvac-maintenance', name: 'HVAC Maintenance', category: serviceCategories[0] },
+      { slug: 'emergency-leak-repair', name: 'Emergency Leak Repair', category: serviceCategories[0] },
+      { slug: 'missing-shingles', name: 'Missing Shingles', category: serviceCategories[1] },
+      { slug: 'damaged-shingles', name: 'Damaged Shingles', category: serviceCategories[1] },
+      { slug: 'storm-damage', name: 'Storm Damage', category: serviceCategories[2] },
+      { slug: 'hail-damage-repair', name: 'Hail Damage Repair', category: serviceCategories[3] },
+      { slug: 'wind-damage-repair', name: 'Wind Damage Repair', category: serviceCategories[3] },
+      { slug: 'gutter-cleaning', name: 'Gutter Cleaning', category: serviceCategories[5] },
+      { slug: 'gutter-replacement', name: 'Gutter Replacement', category: serviceCategories[5] },
     ];
 
     for (const svc of keyServices) {
@@ -937,7 +919,7 @@ export default function ServicesPage() {
       <section className="py-16 bg-gradient-to-b from-dark-blue to-[#1a5a9e]">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Our HVAC Services</h1>
-          <p className="text-xl text-gray-200 max-w-3xl mx-auto">Complete heating and cooling services for the ${siteConfig.region}.</p>
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto">Complete roof repair services for the ${siteConfig.region}.</p>
         </div>
       </section>
       <section className="py-16 bg-white">
@@ -1044,7 +1026,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none text-gray-600 mb-12">
-              <p>${siteConfig.businessName} is a locally owned and operated HVAC company serving homeowners throughout the ${siteConfig.region}. We provide complete heating and cooling services including AC repair, furnace installation, heat pump service, and preventive maintenance.</p>
+              <p>${siteConfig.businessName} is a locally owned and operated HVAC company serving homeowners throughout the ${siteConfig.region}. We provide complete roof repair services including AC repair, furnace installation, heat pump service, and preventive maintenance.</p>
               <p>Our team of licensed technicians is committed to providing honest, reliable service at fair prices. We believe in doing the job right the first time and standing behind our work.</p>
             </div>
             <div className="grid md:grid-cols-3 gap-8 mb-12">

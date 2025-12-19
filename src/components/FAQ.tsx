@@ -5,13 +5,13 @@ import { ChevronDown } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 export const faqs = [
-  { question: 'How much does HVAC repair cost?', answer: 'Most repairs run between $150-500 depending on the issue. Diagnostic fees typically start around $89 and get applied to the repair cost if you move forward. We always provide upfront pricing before any work begins.' },
-  { question: 'How often should I service my HVAC system?', answer: 'We recommend a tune-up twice a year—once in spring for your AC and once in fall for your furnace. Regular maintenance catches small problems before they become expensive repairs and keeps your system running efficiently.' },
-  { question: 'Do you offer 24/7 emergency service?', answer: 'Yes. No heat in the middle of winter or AC failure during a heat wave? We get it—some things can\'t wait. Our emergency technicians are available around the clock, including weekends and holidays.' },
-  { question: 'How long does a new AC or furnace installation take?', answer: 'Most standard installations take one day. If we\'re replacing both your furnace and AC or doing ductwork modifications, it might take two days. We\'ll give you a timeline before we start.' },
-  { question: 'What brands do you work on?', answer: 'We service all major brands—Carrier, Trane, Lennox, Rheem, Goodman, Bryant, American Standard, and more. Our techs are trained to diagnose and repair any make or model.' },
-  { question: 'How do I know if I need a repair or replacement?', answer: 'Generally, if your system is over 15 years old and needs a repair costing more than half a new unit, replacement makes more sense. We\'ll always give you honest advice and both options so you can decide what\'s right for your situation.' },
-  { question: 'Do you offer financing?', answer: 'Yes, we offer flexible financing options on new equipment installations. Get a new system now and pay over time with approved credit. Ask us about current promotions.' },
+  { question: 'How much does roof repair cost?', answer: 'Most repairs run between $200-800 depending on the damage. Simple shingle repairs might be $200-400, while more complex leak repairs can run $400-800. We provide upfront pricing before any work begins and offer free inspections.' },
+  { question: 'How quickly can you fix a roof leak?', answer: 'For emergencies, we can usually get a tarp up within a few hours to stop active leaks. Permanent repairs are typically completed within 1-2 days, weather permitting. We prioritize leak repairs to prevent further damage to your home.' },
+  { question: 'Do you offer 24/7 emergency service?', answer: 'Yes. Roof leak in the middle of the night? Storm damage on a weekend? We understand roof emergencies can\'t wait. Our emergency team is available around the clock to protect your home.' },
+  { question: 'Will you work with my insurance company?', answer: 'Absolutely. We have extensive experience working with insurance claims for storm damage, hail damage, and wind damage. We can provide detailed documentation and work directly with your adjuster to make the process smooth.' },
+  { question: 'Can you match my existing shingles?', answer: 'In most cases, yes. We work with all major shingle manufacturers and can usually match your existing roof color and style. For discontinued products, we\'ll find the closest match available.' },
+  { question: 'How do I know if I need repair or replacement?', answer: 'Generally, if your roof is under 15 years old and the damage is localized, repair makes sense. If it\'s older with widespread issues, replacement might be more cost-effective long-term. We\'ll give you honest advice and both options.' },
+  { question: 'Do you offer warranties on repairs?', answer: 'Yes. All our repairs come with a workmanship warranty. The specific terms depend on the type of repair, but we stand behind our work and will make it right if there are any issues.' },
 ]
 
 export function FAQ() {

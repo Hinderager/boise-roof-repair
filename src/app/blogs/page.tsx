@@ -3,43 +3,43 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'HVAC Blog | Heating & Cooling Tips | Boise HVAC Pros',
-  description: 'Expert tips, guides, and insights about heating and air conditioning in Boise and the Treasure Valley. Learn from the pros at Boise HVAC Pros.',
+  title: 'Roof Repair Blog | Tips & Guides | Boise Roof Repair Pros',
+  description: 'Expert tips, guides, and insights about roof repair in Boise and the Treasure Valley. Learn from the pros at Top Shelf Roofing.',
   alternates: {
-    canonical: 'https://hvac-boise.com/blogs',
+    canonical: 'https://boise-roof-repair.com/blogs',
   },
 }
 
 const blogPosts = [
   {
-    slug: 'hvac-pricing-explained',
-    title: 'HVAC Service Pricing: How It Actually Works',
-    excerpt: 'Wondering what HVAC repairs or installations cost in Boise? Here\'s the straightforward explanation.',
-    image: '/hero-hvac.jpg',
+    slug: 'signs-you-need-roof-repair',
+    title: '8 Signs You Need Roof Repair (Before It\'s Too Late)',
+    excerpt: 'Your roof usually warns you before it fails. Here\'s what to watch for.',
+    image: '/hero-roof.jpg',
   },
   {
-    slug: 'signs-ac-needs-repair',
-    title: '7 Signs Your AC Needs Repair (Before It Dies Completely)',
-    excerpt: 'Your AC is probably warning you before it fails. Here\'s what to watch for.',
-    image: '/hero-hvac.jpg',
+    slug: 'roof-repair-vs-replacement',
+    title: 'Roof Repair vs Replacement: Which Do You Actually Need?',
+    excerpt: 'Sometimes a repair makes sense. Sometimes you\'re just throwing money away. Here\'s how to decide.',
+    image: '/hero-roof.jpg',
   },
   {
-    slug: 'repair-vs-replace-furnace',
-    title: 'Should You Repair or Replace Your Furnace?',
-    excerpt: 'Sometimes repair makes sense. Sometimes you\'re just throwing money away. Here\'s how to decide.',
-    image: '/hero-hvac.jpg',
+    slug: 'common-roof-problems-boise',
+    title: 'Common Roof Problems in Boise (And How to Fix Them)',
+    excerpt: 'Idaho weather puts your roof through the wringer. Here are the issues we see most often.',
+    image: '/hero-roof.jpg',
   },
   {
-    slug: 'choosing-hvac-contractor-boise',
-    title: 'How to Choose an HVAC Contractor in Boise',
-    excerpt: 'Not all HVAC companies are the same. Here\'s what to look for and what to avoid.',
-    image: '/hero-hvac.jpg',
+    slug: 'roof-repair-cost-guide',
+    title: 'Roof Repair Costs in Boise: What to Expect',
+    excerpt: 'Wondering what roof repairs cost? Here\'s the straightforward explanation.',
+    image: '/hero-roof.jpg',
   },
   {
-    slug: 'seasonal-hvac-maintenance',
-    title: 'Seasonal HVAC Maintenance for Idaho Homes',
-    excerpt: 'Idaho puts your HVAC through extremes. Here\'s how to keep it running through hot summers and cold winters.',
-    image: '/hero-hvac.jpg',
+    slug: 'emergency-roof-repair-tips',
+    title: 'Emergency Roof Repair: What to Do When Your Roof Leaks',
+    excerpt: 'Discovered a leak? Here\'s how to minimize damage while waiting for help.',
+    image: '/hero-roof.jpg',
   },
 ]
 
@@ -53,7 +53,7 @@ export default function BlogsPage() {
             Our Blog
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
-            Tips, guides, and insights about heating and cooling in the Treasure Valley. Real advice from real HVAC professionals.
+            Tips, guides, and insights about roof repair in the Treasure Valley. Real advice from real roofing professionals.
           </p>
         </div>
       </section>
@@ -67,7 +67,7 @@ export default function BlogsPage() {
                 <Link href={`/blogs/${post.slug}`}>
                   <div className="relative h-48 bg-dark-blue">
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="text-white/20 text-6xl font-bold">HVAC</span>
+                      <span className="text-white/20 text-6xl font-bold">ROOF</span>
                     </div>
                   </div>
                   <div className="p-6">
@@ -98,7 +98,7 @@ export default function BlogsPage() {
             Ready to Get Started?
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Contact us today for a free estimate on your HVAC project.
+            Contact us today for a free estimate on your roof repair project.
           </p>
           <a
             href="tel:2085059352"

@@ -18,12 +18,12 @@ export function Footer() {
           <div>
             <h4 className="text-xl font-bold mb-4 text-light-blue">Services</h4>
             <ul className="space-y-2">
-              <li><Link href="/ac-repair" className="text-white/80 hover:text-white transition-colors">AC Repair</Link></li>
-              <li><Link href="/ac-installation" className="text-white/80 hover:text-white transition-colors">AC Installation</Link></li>
-              <li><Link href="/heating-repair" className="text-white/80 hover:text-white transition-colors">Heating Repair</Link></li>
-              <li><Link href="/furnace-installation" className="text-white/80 hover:text-white transition-colors">Furnace Installation</Link></li>
-              <li><Link href="/hvac-maintenance" className="text-white/80 hover:text-white transition-colors">HVAC Maintenance</Link></li>
-              <li><Link href="/emergency-hvac" className="text-white/80 hover:text-white transition-colors">24/7 Emergency</Link></li>
+              <li><Link href="/leak-repair" className="text-white/80 hover:text-white transition-colors">Leak Repair</Link></li>
+              <li><Link href="/shingle-repair" className="text-white/80 hover:text-white transition-colors">Shingle Repair</Link></li>
+              <li><Link href="/emergency-repair" className="text-white/80 hover:text-white transition-colors">Emergency Repair</Link></li>
+              <li><Link href="/storm-damage" className="text-white/80 hover:text-white transition-colors">Storm Damage</Link></li>
+              <li><Link href="/flat-roof-repair" className="text-white/80 hover:text-white transition-colors">Flat Roof Repair</Link></li>
+              <li><Link href="/gutter-repair" className="text-white/80 hover:text-white transition-colors">Gutter Repair</Link></li>
             </ul>
           </div>
 
@@ -47,7 +47,7 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="h-5 w-5 text-[#ff6b35] flex-shrink-0 mt-1" />
-                <a href="mailto:info@hvac-boise.com" className="text-white/80 hover:text-white transition-colors">info@hvac-boise.com</a>
+                <a href="mailto:info@boise-roof-repair.com" className="text-white/80 hover:text-white transition-colors">info@boise-roof-repair.com</a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-[#ff6b35] flex-shrink-0 mt-1" />
@@ -69,7 +69,7 @@ export function Footer() {
               <span className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center"><Linkedin className="h-5 w-5" /></span>
             </div>
             <div className="text-center md:text-right">
-              <p className="text-white/60 text-sm">&copy; {new Date().getFullYear()} Boise HVAC Pros. All rights reserved.</p>
+              <p className="text-white/60 text-sm">&copy; {new Date().getFullYear()} Boise Roof Repair Pros. All rights reserved.</p>
               <div className="flex gap-4 mt-2 justify-center md:justify-end">
                 <Link href="/privacy" className="text-white/60 text-sm hover:text-white transition-colors">Privacy Policy</Link>
                 <Link href="/terms" className="text-white/60 text-sm hover:text-white transition-colors">Terms of Service</Link>

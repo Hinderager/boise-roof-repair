@@ -7,50 +7,57 @@ import { Button } from '@/components/ui/button'
 
 const serviceCategories = [
   {
-    name: 'Air Conditioning',
-    href: '/services/air-conditioning',
+    name: 'Leak Repair',
+    href: '/services/leak-repair',
     services: [
-      { name: 'AC Repair', href: '/services/air-conditioning/ac-repair' },
-      { name: 'AC Maintenance', href: '/services/air-conditioning/ac-maintenance' },
-      { name: 'AC Installation', href: '/services/air-conditioning/ac-installation' },
-      { name: 'Emergency AC Repair', href: '/services/air-conditioning/emergency-ac-repair' },
-      { name: 'Thermostat Repair', href: '/services/air-conditioning/thermostat-repair' },
+      { name: 'Emergency Leak Repair', href: '/services/leak-repair/emergency-leak-repair' },
+      { name: 'Chimney Leak Repair', href: '/services/leak-repair/chimney-leak-repair' },
+      { name: 'Valley Leak Repair', href: '/services/leak-repair/valley-leak-repair' },
     ]
   },
   {
-    name: 'Heating',
-    href: '/services/heating',
+    name: 'Shingle Repair',
+    href: '/services/shingle-repair',
     services: [
-      { name: 'Heater Repair', href: '/services/heating/heater-repair' },
-      { name: 'Heater Maintenance', href: '/services/heating/heater-maintenance' },
-      { name: 'Heater Installation', href: '/services/heating/heater-installation' },
+      { name: 'Missing Shingles', href: '/services/shingle-repair/missing-shingles' },
+      { name: 'Damaged Shingles', href: '/services/shingle-repair/damaged-shingles' },
+      { name: 'Wind Damage', href: '/services/shingle-repair/wind-damage' },
     ]
   },
   {
-    name: 'Furnaces',
-    href: '/services/furnaces',
+    name: 'Emergency Repair',
+    href: '/services/emergency-repair',
     services: [
-      { name: 'Furnace Repair', href: '/services/furnaces/furnace-repair' },
-      { name: 'Furnace Maintenance', href: '/services/furnaces/furnace-maintenance' },
-      { name: 'Furnace Installation', href: '/services/furnaces/furnace-installation' },
+      { name: '24/7 Emergency Service', href: '/services/emergency-repair/24-7-service' },
+      { name: 'Storm Damage', href: '/services/emergency-repair/storm-damage' },
+      { name: 'Temporary Tarping', href: '/services/emergency-repair/temporary-tarping' },
     ]
   },
   {
-    name: 'Heat Pumps',
-    href: '/services/heat-pumps',
+    name: 'Storm Damage',
+    href: '/services/storm-damage',
     services: [
-      { name: 'Heat Pump Repair', href: '/services/heat-pumps/heat-pump-repair' },
-      { name: 'Heat Pump Maintenance', href: '/services/heat-pumps/heat-pump-maintenance' },
-      { name: 'Heat Pump Installation', href: '/services/heat-pumps/heat-pump-installation' },
+      { name: 'Hail Damage Repair', href: '/services/storm-damage/hail-damage-repair' },
+      { name: 'Wind Damage Repair', href: '/services/storm-damage/wind-damage-repair' },
+      { name: 'Tree Damage Repair', href: '/services/storm-damage/tree-damage-repair' },
     ]
   },
   {
-    name: 'Indoor Air Quality',
-    href: '/services/indoor-air-quality',
+    name: 'Flat Roof Repair',
+    href: '/services/flat-roof-repair',
     services: [
-      { name: 'Air Purifiers', href: '/services/indoor-air-quality/air-purifiers' },
-      { name: 'Duct Cleaning', href: '/services/indoor-air-quality/duct-cleaning' },
-      { name: 'UV Light Installation', href: '/services/indoor-air-quality/uv-light-installation' },
+      { name: 'Membrane Repair', href: '/services/flat-roof-repair/membrane-repair' },
+      { name: 'Ponding Water', href: '/services/flat-roof-repair/ponding-water' },
+      { name: 'Flashing Repair', href: '/services/flat-roof-repair/flashing-repair' },
+    ]
+  },
+  {
+    name: 'Gutter Repair',
+    href: '/services/gutter-repair',
+    services: [
+      { name: 'Gutter Cleaning', href: '/services/gutter-repair/gutter-cleaning' },
+      { name: 'Downspout Repair', href: '/services/gutter-repair/downspout-repair' },
+      { name: 'Gutter Replacement', href: '/services/gutter-repair/gutter-replacement' },
     ]
   },
 ]
@@ -101,7 +108,7 @@ export function Header() {
         <div className="bg-[#10477d] lg:rounded-lg border-b-2 lg:border-2 border-[#1e3a5f] shadow-xl px-2 sm:px-4 md:px-6 lg:px-8 flex items-center h-14 lg:h-20">
           <Link href="/" className="flex items-center lg:flex-1 flex-1 justify-start">
             <span className="text-lg sm:text-xl lg:text-2xl font-bold text-white">
-              Boise <span className="text-[#FFC845]">HVAC</span> Pros
+              Boise <span className="text-[#FFC845]">Roof Repair</span>
             </span>
           </Link>
 
@@ -182,7 +189,7 @@ export function Header() {
                 <div className="absolute left-0 top-full mt-2 w-[200px] bg-white shadow-lg rounded-lg p-4">
                   <ul className="space-y-2">
                     <li><Link href="/resources/faq" className="text-sm text-gray-600 hover:text-[#0b7fb6] transition-colors">FAQ</Link></li>
-                    <li><Link href="/resources/hvac-tips" className="text-sm text-gray-600 hover:text-[#0b7fb6] transition-colors">HVAC Tips</Link></li>
+                    <li><Link href="/resources/roof-care-tips" className="text-sm text-gray-600 hover:text-[#0b7fb6] transition-colors">Roof Care Tips</Link></li>
                     <li><Link href="/resources/repair-vs-replace" className="text-sm text-gray-600 hover:text-[#0b7fb6] transition-colors">Repair vs Replace</Link></li>
                     <li><Link href="/resources/financing" className="text-sm text-gray-600 hover:text-[#0b7fb6] transition-colors">Financing</Link></li>
                     <li><Link href="/blogs" className="text-sm text-gray-600 hover:text-[#0b7fb6] transition-colors">Blog</Link></li>

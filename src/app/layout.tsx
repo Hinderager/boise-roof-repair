@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next'
+import Script from 'next/script'
 import { Montserrat, Oswald } from 'next/font/google'
 import './globals.css'
 import { Header } from '@/components/Header'
@@ -21,32 +22,32 @@ const oswald = Oswald({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://hvac-boise.com'),
+  metadataBase: new URL('https://boise-roof-repair.com'),
   title: {
-    default: 'HVAC Services Boise | Heating & Air Conditioning Repair Idaho',
-    template: '%s | Boise HVAC Pros',
+    default: 'Roof Repair Boise | Emergency Leak & Shingle Repair Idaho',
+    template: '%s | Boise Roof Repair Pros',
   },
-  description: 'Professional HVAC services in Boise, Meridian, Nampa, Caldwell & Eagle Idaho. AC repair, furnace installation, heating services. Licensed & insured. 24/7 emergency service. Call (208) 505-9352.',
+  description: 'Professional roof repair services in Boise, Meridian, Nampa, Caldwell & Eagle Idaho. Leak repair, shingle replacement, storm damage, emergency repairs. Licensed & insured. 24/7 service. Call (208) 505-9352.',
   keywords: [
-    'HVAC Boise',
-    'air conditioning repair Boise Idaho',
-    'furnace repair Meridian',
-    'AC installation Nampa',
-    'heating repair near me',
-    'HVAC contractor Caldwell',
-    'air conditioning service Eagle Idaho',
-    'furnace installation Treasure Valley',
-    '24 hour HVAC repair',
-    'heating and cooling Boise',
-    'AC tune up Idaho',
-    'emergency furnace repair',
+    'roof repair Boise',
+    'roof leak repair Boise Idaho',
+    'shingle repair Meridian',
+    'emergency roof repair Nampa',
+    'storm damage repair near me',
+    'roof contractor Caldwell',
+    'flat roof repair Eagle Idaho',
+    'gutter repair Treasure Valley',
+    '24 hour roof repair',
+    'roofing contractor Boise',
+    'roof leak fix Idaho',
+    'emergency roof service',
   ],
-  authors: [{ name: 'Boise HVAC Pros' }],
+  authors: [{ name: 'Boise Roof Repair Pros' }],
   openGraph: {
-    title: 'HVAC Services | Boise, Meridian, Nampa Idaho',
-    description: 'Professional heating and air conditioning services in the Treasure Valley. Licensed, insured, and available 24/7 for emergencies.',
-    url: 'https://hvac-boise.com',
-    siteName: 'Boise HVAC Pros',
+    title: 'Roof Repair Services | Boise, Meridian, Nampa Idaho',
+    description: 'Professional roof repair services in the Treasure Valley. Licensed, insured, and available 24/7 for emergencies.',
+    url: 'https://boise-roof-repair.com',
+    siteName: 'Boise Roof Repair Pros',
     locale: 'en_US',
     type: 'website',
   },
@@ -82,6 +83,18 @@ export default function RootLayout({
         <link rel="preconnect" href="https://www.google.com" crossOrigin="anonymous" />
       </head>
       <body className={`${montserrat.variable} ${oswald.variable} font-sans antialiased`}>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-581QKP6ZE5"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-581QKP6ZE5');
+          `}
+        </Script>
         <QuoteFormProvider>
           <Header />
           {children}
